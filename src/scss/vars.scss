@@ -1,0 +1,71 @@
+$basicColor-01:#65CDAA;
+$basicColor-02:#20B1AB;
+$basicColor-03:#002221;
+
+// BTN var
+$color: #c8ff00;
+$colorHover: #89af00;
+$navTextColor: #65CDAA;
+$heroTextColor: #ffff;
+$btnColor: #FF6600;
+
+$white: rgb(255, 255, 255);
+
+//icons
+$iconFill: #65CDAA;
+
+//font
+$basic: 16px;
+$basic2: 14px;
+
+@mixin fontBasic(){
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height:26px; 
+    font-weight: 500;
+    color:$basicColor-02;
+}
+@mixin h5 {
+    font-size: 22px;
+    line-height: 30px;
+    color:$basicColor-02;
+}
+
+@mixin h3 {
+    font-size: 22px;
+    line-height: 30px;
+    color:$basicColor-02;
+}
+@mixin h6 {
+    font-size: 20px;
+    font-weight: 800;
+    color: $basicColor-02;
+}
+
+@mixin basic_02{
+    font-size: 14px;
+    line-height:24px; 
+    font-weight: 400;
+    color:$basicColor-01;
+}
+// BTN
+@mixin btn_01{
+    color: $basicColor-03;
+}
+
+@mixin accordingTitle{
+    font-size: 16px;
+    line-height:28px; 
+    font-weight: 700;
+    color:$basicColor-02;
+}
+
+// BTN var2
+
+
+
+@mixin flex() {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
