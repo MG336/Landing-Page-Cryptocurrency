@@ -1,15 +1,15 @@
 $basicColor-01:#65CDAA;
 $basicColor-02:#20B1AB;
-$basicColor-03:#002221;
+$basicColor-03:#000F0F;
+$basicColor-04:white;
+$basicColor-05:#FF6600;
 
 // BTN var
-$color: #c8ff00;
-$colorHover: #89af00;
-$navTextColor: #65CDAA;
-$heroTextColor: #ffff;
-$btnColor: #FF6600;
-
-$white: rgb(255, 255, 255);
+// $color: #c8ff00;
+// $colorHover: #89af00;
+// $navTextColor: #65CDAA;
+// $heroTextColor: #ffff;
+// $btnColor: #FF6600;
 
 //icons
 $iconFill: #65CDAA;
@@ -17,6 +17,12 @@ $iconFill: #65CDAA;
 //font
 $basic: 16px;
 $basic2: 14px;
+
+@mixin title($size){
+    font-size: $size+px;
+    color: $basicColor-02;
+    line-height: calc($size * 1.2px);
+}
 
 @mixin fontBasic(){
     font-family: 'Inter';
@@ -48,6 +54,7 @@ $basic2: 14px;
     font-weight: 400;
     color:$basicColor-01;
 }
+
 // BTN
 @mixin btn_01{
     color: $basicColor-03;
