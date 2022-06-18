@@ -131,11 +131,24 @@
 .table {
     border-collapse: collapse;
 
-    &__con {}
-
+    &__con {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+    &__text{
+        margin: 0;
+    }
     &__box {
         margin: 0 auto;
         max-width: 840px;
+        flex-grow: 1;
+        width: 100%;
+    }
+    &__btn{
+        // margin: 0 auto;
     }
 }
 
@@ -496,6 +509,8 @@
 
     &__icon {
         fill: $basicColor-01;
+        width: 80px;
+        height: 80px;
     }
 
     &__cards {
@@ -510,13 +525,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
         gap: 32px;
         border: 2px solid $basicColor-01;
         border-radius: 20px;
         overflow: hidden;
         padding: 32px 0;
         width: 350px;
-        height: 440px;
+        height: 480px;
     }
 
     &__textBox {
@@ -783,8 +799,11 @@
 
     &__copyText {
         @include fontBasic();
+        text-transform: uppercase;
     }
-
+    &__copyLink{
+        color: inherit;
+    }
 
     &__icons {
 
